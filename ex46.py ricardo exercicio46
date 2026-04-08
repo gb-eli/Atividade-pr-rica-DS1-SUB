@@ -24,7 +24,7 @@ def  menu()
     print("2-não)
   escolha = input()
     if escolha == '1')
-       print("voltar ao menu de escolhas?") https://github.com/santskimi-oss/ecercicio-27-nao-37
+       print("voltar ao menu de escolhas?") 
     
     else:
         print("obrigado por comprar conosco"))
