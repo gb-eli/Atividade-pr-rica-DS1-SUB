@@ -14,4 +14,5 @@ def Venda():
     else:
         print("NÃO TEM ESSA OPÇÃO")
 
-Venda()
+if __name__ == '__main__':
+    Venda()

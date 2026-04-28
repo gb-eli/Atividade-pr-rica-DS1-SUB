@@ -19,6 +19,7 @@ def menu_roupas():
     elif roupa ==b"4":
       print("sair")
 
-      
 
-menu_roupas()
+
+if __name__ == '__main__':
+    menu_roupas()

@@ -24,47 +24,51 @@ def samsung():
     print("4. S26 Ultra")
     print("5. Sair")
 
-opcao = int(input("Digite a linha de celular: "))
-if opcao == 1:
-    xiomi()
-    escolha = int(input("Digite o número do celular que deseja comprar: "))
-    if escolha == 1:
-        print("Você escolheu o Xiomi Redmi Note 11 Pro")
-    elif escolha == 2:
-        print("Você escolheu o Xiomi Redmi Note 12 Pro Plus")
-    elif escolha == 3:
-        print("Você escolheu o Xiomi Redmi Note 15 Pro Max")
-    elif escolha == 4:
-        print("Você escolheu o Xiomi Redmi Note 14 Pro Ultra")
-    elif escolha == 5:
-        print("Saindo...")
-    else:
-        print("Opção inválida.")
-elif opcao == 2:
-    iphone()
-    escolha = int(input("Digite o número do celular que deseja comprar: "))
-    if escolha == 1:
-        print("Você escolheu o Iphone 15 Pro Max")
-    elif escolha == 2:
-        print("Você escolheu o Iphone 15 Pro")
-    elif escolha == 3:
-        print("Você escolheu o Iphone X")
-    elif escolha == 4:
-        print("Você escolheu o Iphone 11")
-    elif escolha == 5:
-        print("Saindo...")
-    else:
-        print("Opção inválida.")
-elif opcao == 3:
-    samsung()
-    escolha = int(input("Digite o número do celular que deseja comprar: "))
-    if escolha == 1:
-        print("Você escolheu o Samsung Galaxy S24 Ultra")
-    elif escolha == 2:
-        print("Você escolheu o S26 Plus")
-    elif escolha == 3:
-        print("Você escolheu o S26 Ultra")
-    elif escolha == 4:
-        print("Saindo...")
-    else:
-        print("Opção inválida.")
+def menu():
+    opcao = int(input("Digite a linha de celular: "))
+    if opcao == 1:
+        xiomi()
+        escolha = int(input("Digite o número do celular que deseja comprar: "))
+        if escolha == 1:
+            print("Você escolheu o Xiomi Redmi Note 11 Pro")
+        elif escolha == 2:
+            print("Você escolheu o Xiomi Redmi Note 12 Pro Plus")
+        elif escolha == 3:
+            print("Você escolheu o Xiomi Redmi Note 15 Pro Max")
+        elif escolha == 4:
+            print("Você escolheu o Xiomi Redmi Note 14 Pro Ultra")
+        elif escolha == 5:
+            print("Saindo...")
+        else:
+            print("Opção inválida.")
+    elif opcao == 2:
+        iphone()
+        escolha = int(input("Digite o número do celular que deseja comprar: "))
+        if escolha == 1:
+            print("Você escolheu o Iphone 15 Pro Max")
+        elif escolha == 2:
+            print("Você escolheu o Iphone 15 Pro")
+        elif escolha == 3:
+            print("Você escolheu o Iphone X")
+        elif escolha == 4:
+            print("Você escolheu o Iphone 11")
+        elif escolha == 5:
+            print("Saindo...")
+        else:
+            print("Opção inválida.")
+    elif opcao == 3:
+        samsung()
+        escolha = int(input("Digite o número do celular que deseja comprar: "))
+        if escolha == 1:
+            print("Você escolheu o Samsung Galaxy S24 Ultra")
+        elif escolha == 2:
+            print("Você escolheu o S26 Plus")
+        elif escolha == 3:
+            print("Você escolheu o S26 Ultra")
+        elif escolha == 4:
+            print("Saindo...")
+        else:
+            print("Opção inválida.")
+
+if __name__ == '__main__':
+    menu()

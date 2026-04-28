@@ -1,0 +1,36 @@
+RELATÓRIO DE ERROS NOS ARQUIVOS DOS ALUNOS
+==========================================
+
+Estes arquivos NÃO foram incluídos no main.py por conterem erros que impedem o import.
+
+------------------------------------------
+ARQUIVO: ricardo.py
+STATUS: MÚLTIPLOS ERROS CRÍTICOS DE SINTAXE
+------------------------------------------
+
+Linha 1:  "Ricardo-exercicio" — texto solto fora de qualquer estrutura (não é comentário nem código válido)
+Linha 3:  "def menu():" com indentação errada (espaço antes de "def")
+Linha 5:  input("ricaro")) — parêntese de fechamento sobrando
+Linha 9:  print('acesso negado")')' — aspas e parênteses desbalanceados; aspa simples extra no final
+Linha 11: if senha == 'ricardo": — mistura aspas simples (abre) e duplas (fecha), inválido
+Linha 12: print('accesso permitido")')' — mesmo problema da linha 9
+Linha 14: print:("acesso negad0") — uso de ":" após print; print é função, não usa dois-pontos
+Linha 19: def  menu() — função redefinida (já existe na linha 3) e falta ":" no final
+Linha 21: print('produtoe scolhido com sucesso") — mistura aspas simples (abre) e duplas (fecha)
+Linha 24: print("2-não) — string não fechada (falta aspas de fechamento)
+Linha 26: if escolha == '1') — parêntese de fechamento inválido após condição do if
+Linha 30: print("obrigado por comprar conosco")) — parêntese de fechamento sobrando
+
+------------------------------------------
+ARQUIVO: diego.py
+STATUS: IMPORTA SEM ERRO, MAS TEM BUG LÓGICO
+------------------------------------------
+
+Linha 19: elif roupa == b"4":
+  - "b"4"" é um literal de bytes (bytes), mas "roupa" é uma string (str).
+  - A comparação str == bytes nunca é True em Python 3.
+  - A opção "4 - sim" (sair) nunca vai funcionar.
+  - Correção: trocar b"4" por "4"
+
+OBSERVAÇÃO: O diego.py foi incluído no main.py pois o Python consegue importá-lo
+sem erros. Apenas a opção 4 não vai responder ao usuário.
